@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+				#student{
+						top: 99px;
+						position: absolute;
+						height: 40px;
+						width: 40px;
+						left: 37px;
+					}
+			
+				#lessonplan{
+						top: 186px;
+						position: absolute;
+						height: 40px;
+						width: 40px;
+						left: 37px;
+					}
+				#setting{
+						top: 267px;
+						position: absolute;
+						height: 40px;
+						width: 40px;
+						left:37px;
+					}	
+										* {box-sizing: border-box}
+										body {font-family: "Lato", sans-serif;}
+				.tab {
+						float: left;
+						background-color: #fffcfc;
+						width: 115px;
+						height: 100%;
+						top: 0px;
+						position: absolute;
+					}			
+				.tab button {
+							display: block;
+							background-color: inherit;
+							color: black;
+							padding: 22px 16px;
+							width: 100%;
+							border: none;
+							outline: none;
+							text-align: left;
+							cursor: pointer;
+							transition: 0.3s;
+							font-size: 17px;
+						}
+				.tab button:hover {
+								background-color: #eeeeee;
+							}	
+							
+				.tab button.active {
+								background-color: #79aeea73;
+							}	
+
+				.tabcontent {
+							position: absolute;
+							float: left;
+							padding: 0px 12px;
+							width: 783px;
+							top: 87px;
+							left: 115px;
+						}
+				#wrapper{
+							position: absolute;
+							background-color: #7575752e;
+							height: 98%;
+							width: 99%;
+						}	
+				#header{
+	
+						position: absolute;
+						top: 0px;
+						height: 89px;
+						left: 100px;
+						background-color:  #ffffff91;
+						width: 100%;
+					}		
+				.student1{
+						position: absolute;
+						left: 210px;
+						top: 180px;
+					}
+				.lesson1{
+						position: absolute;
+						left: 210px;
+						top: 180px;
+					}
+				.setting1{
+						position: absolute;
+						left: 210px;
+						top: 180px;
+					}
+				#plan{
+						position: absolute;
+						width: 602px;	
+						height: 160%;
+						border-bottom-left-radius: 5px;
+						border-bottom-right-radius: 5px;
+						border-top-left-radius: 5px;
+						border-top-right-radius: 5px;
+						border-color: white;
+						top: -131px;
+						left:-20px;
+					}
+				#or{
+						position: absolute;
+						top: 106px;
+						left: 504px;
+					}	
+				#upload{
+						position: absolute;
+						width: 100px;
+						top: 142px;
+						left: 192px;
+						height: 100px;
+						background-color: white;
+						border-bottom-left-radius: 5px;
+						border-bottom-right-radius: 5px;
+						border-top-left-radius: 5px;
+						border-top-right-radius: 5px;
+					}
+				.upload{
+						position: absolute;
+						width: 100px;
+						top: 202px;
+						left: 218px;
+						height: 100px;
+					}
+				#Stu{
+						position: absolute;
+						left: 29px;
+						font-size: smaller;
+						top: 149px;
+					}
+				#Lp{
+						position: absolute;
+						top: 235px;
+						left: 17px;
+						font-size: smaller;
+					}
+				#Set{
+						left: 31px;
+						font-size: smaller;
+						top: 294px;
+						position: absolute;
+					}
+				#video{
+						position:absolute;
+						left: 60px;
+						top: 14px;
+					}
+
+				#viedologo{
+							position: absolute;
+							top: 1px;
+							left: -16px;
+							height: 13px;
+						}
+				#circle{
+						position: absolute;
+						top: 15px;
+						left: 38px;
+						height: 55px;
+						transform: rotate(90deg);
+					}
+				#semicircle{
+							position: absolute;
+							top: 22px;
+							height: 41px;
+							left: 11px;
+							transform: rotate( 270deg);
+						}			
+				#arc{
+						position: absolute;
+						top: 25px;
+						left: 12px;
+						height: 50px;
+						transform: rotate(179deg);
+					}		
+
+		</style>
+		</head>
+	<body>
+
+				<div id="wrapper">
+									<header id="header"></header>
+
+						<div class="tab">
+									<!--<img src="https://image.flaticon.com/icons/png/512/105/105123.png" id="arc">-->
+									<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm-Y2IkTEkAqiO8TVjn5YH6j1QYx3r8jc6inPbbFMHfuDCy3O4TjouT09PBdfGHXSpn5k&usqp=CAU" id="semicircle">
+									<img src="https://static.thenounproject.com/png/2289880-200.png" id="circle">
+									<br><br><br><br><br><button class="tablinks" onclick="menu(event, 'Menu1')" id="defaultOpen"><br><br> <div id="Stu">Students</div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVe0cFaZ9e5Hm9X-tdWRLSvoZqg2bjemBABA&usqp=CAU" id="student"></button>
+									<button class="tablinks" onclick="menu(event, 'Menu2')"><br><br><div id="Lp">Lesson Plan</div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIOCx50g2LReUxH-6cmemRvSv64XliXrNMp_o5B13sToC2i1Qk7vwpAmNmtNNSSHVlDGU&usqp=CAU" id="lessonplan"></button>
+									<button class="tablinks" onclick="menu(event, 'Menu3')"><br><br><div id="Set"><br>Settings<br><br></div><img src="https://www.pikpng.com/pngl/m/112-1121340_settings-logo-png-white-png-download-setting-icon.png" id="setting"></button>
+						</div>
+
+						<div id="Menu1" class="tabcontent"> <p class="student1"></p> </div>
+
+						<div id="Menu2" class="tabcontent">
+							 <div id="video">Videos<img src="data:image/jpeg;base64,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" id="viedologo"></div>
+							<p class="lesson1"> <input type="text" id="plan" name="URL" value="  Insert URL here "> <br></p> 
+							<p id="or"> or </p>
+							<p id="upload"><div class="upload">Upload</div></p>
+						</div>
+
+						<div id="Menu3" class="tabcontent"> <p class="setting1"></p> </div>
+				</div>
+		<script>
+					function menu(evt, menubtn) 
+					{
+						var i, tabcontent, tablinks;
+						tabcontent = document.getElementsByClassName("tabcontent");
+						for (i = 0; i < tabcontent.length; i++)
+						{
+							tabcontent[i].style.display = "none";
+						}
+						tablinks = document.getElementsByClassName("tablinks");
+						for (i = 0; i < tablinks.length; i++) 
+						{
+							tablinks[i].className = tablinks[i].className.replace(" active", "");
+						}
+						document.getElementById(menubtn).style.display = "block";
+						evt.currentTarget.className += " active";
+					}
+
+						document.getElementById("defaultOpen").click();
+		</script>
+   
+	</body>
+</html> 
